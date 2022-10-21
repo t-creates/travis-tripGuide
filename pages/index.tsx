@@ -3,12 +3,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-import CarHomePage from './../components/CarHomePage';
+import HeroSection from '../components/HeroSection/HeroSection';
 
 const Home: NextPage = () => {
   return (
     <div className="pt-11">
-      <CarHomePage />
+      <HeroSection />
     </div>
   )
 }
