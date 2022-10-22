@@ -26,3 +26,28 @@ h3{
 h2{
   @apply text-black dark:text-gray-300
 }
+
+/* Classes */
+.bannerHeadlineMobile {  
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  /* or 150% */
+  letter-spacing: -0.005em;
+  color: #3B3E44;
+  text-shadow: 0px 8px 16px rgba(51, 51, 51, 0.08);
+}
+
+.bannerHeadline {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 80px;
+  font-size: 64px;
+  letter-spacing: -0.005em;
+  /* or 125% */
+  text-shadow: 0px 8px 16px rgba(51, 51, 51, 0.08);
+  color: #3B3E44;
+}
