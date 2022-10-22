@@ -3,7 +3,7 @@ import React from 'react'
 const BannerHeadline = ({ bannerHeadline, bannerDesc }) => {
   console.log(bannerHeadline, bannerDesc);
   return (
-    <div className='laptop:w-1/2 laptop:h-96 mobile:h-20'>
+    <div className='laptop:h-96 mobile:h-20'>
       <div className='bannerHeadline laptop:text-6xl mobile:text-3xl laptop:leading-[80px] mobile:leading-[54px]'>
         <h1>{bannerHeadline}</h1>
       </div>
