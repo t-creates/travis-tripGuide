@@ -1,18 +1,10 @@
 import React from 'react'
+import Image from 'next/image'
 
 const BannerImage = () => {
-  const banners = [
-    {
-      id: 1,
-      image: '',
-      title: 'Hotel Booking',
-      headline: 'Book With Us And Enjoy Your Journey!',
-    }
-  ]
-
   return (
     <div>
-      <Image src="/images/hero-image.jpg" alt="hero-image" />
+      <Image src="" alt="hero-image" />
     </div>
   )
 }
