@@ -29,9 +29,9 @@ const HeroSection = () => {
   ]
 
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col mobile:mx-5'>
       <BannerImage />
-      <div className='laptop:mt-48 laptop:ml-48 mobile:mx-8 mt-20'>
+      <div className='laptop:w-1/2 laptop:mt-48 laptop:ml-48 mt-20'>
         <BannerHeadline bannerHeadline={banners[1].headline} bannerDesc={banners[1].description} />
       </div>
     </div>
