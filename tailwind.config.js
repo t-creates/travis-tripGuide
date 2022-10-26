@@ -9,6 +9,9 @@ module.exports = {
       'mobile': '300px',
       // => @media (min-width: 640px) { ... }
 
+      'tablet': '640px',
+      // => @media (min-width: 768px) { ... }
+
       'laptop': '1024px',
       // => @media (min-width: 1024px) { ... }
 

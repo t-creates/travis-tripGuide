@@ -2,38 +2,42 @@ import React from 'react'
 import BannerHeadline from './BannerHeadline';
 import BannerImage from './BannerImage';
 
-const HeroSection = () => {
-  const banners = [
-    {
-      id: 1,
-      image: '',
-      title: 'Hotel Booking',
-      headline: 'Book With Us And Enjoy Your Journey!',
-      description: '',
-    },
-    {
-      id: 2,
-      image: '',
-      title: 'Car Booking',
-      headline: 'Find Your Best Rental Car?',
-      description: 'Find and book a great experience',
+// Images
+import carBanner from '../../public/carBanner.png'
+import flightBanner from '../../public/flightBanner.png'
+import palmBeach from '../../public/palmBeach.png'
 
-    },
-    {
-      id: 3,
-      image: '',
-      title: 'Flight Booking',
-      headline: 'Amazing Flight to Switzerland',
-      description: 'Find and book a great experience',
-    }
-  ]
+// Temporary data till we decide on pages or dynamic front-end
+const banners = [
+  {
+    id: 0,
+    image: palmBeach,
+    title: 'Hotel Booking',
+    headline: 'Book With Us And Enjoy Your Journey!',
+    description: '',
+  },
+  {
+    id: 1,
+    image: carBanner,
+    title: 'Car Booking',
+    headline: 'Find Your Best Rental Car?',
+    description: 'Find and book a great experience',
+
+  },
+  {
+    id: 2,
+    image: flightBanner,
+    title: 'Flight Booking',
+    headline: 'Amazing Flight to Switzerland',
+    description: 'Find and book a great experience',
+  }
+]
+const HeroSection = () => {
 
   return (
-    <div className='flex flex-col mobile:mx-5'>
-      <BannerImage />
-      <div className='laptop:w-1/2 laptop:mt-48 laptop:ml-48 mt-20'>
-        <BannerHeadline bannerHeadline={banners[1].headline} bannerDesc={banners[1].description} />
-      </div>
+    <div className='mobile:mx-5 flex flex-auto'>
+      <BannerHeadline bannerHeadline={banners[2].headline} bannerDesc={banners[2].description} />
+      <BannerImage image={banners[2].image} />
     </div>
   )
 }
