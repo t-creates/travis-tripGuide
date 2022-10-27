@@ -7,9 +7,13 @@ import HeroSection from '../components/HeroSection/HeroSection';
 
 const Home: NextPage = () => {
   return (
-    <div className="pt-11 w-fit">
-      <HeroSection />
-      <Destinations />
+    <div className="pt-11 mx-5">
+      <div className='mb-36'>
+        <HeroSection />
+      </div>
+      <div>
+        <Destinations />
+      </div>
     </div>
   )
 }
