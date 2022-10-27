@@ -35,7 +35,7 @@ const banners = [
 const HeroSection = () => {
 
   return (
-    <div className='mobile:mx-5 flex flex-auto'>
+    <div className='flex flex-auto'>
       <BannerHeadline bannerHeadline={banners[2].headline} bannerDesc={banners[2].description} />
       <BannerImage image={banners[2].image} />
     </div>
