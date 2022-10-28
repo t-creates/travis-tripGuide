@@ -18,27 +18,23 @@ export const hotelLocationData = axios.request(hotelLocation).then(function (res
 });
 
 
-const options = {
-  method: 'GET',
-  url: 'https://priceline-com-provider.p.rapidapi.com/v2/hotels/autoSuggest',
-  params: {
-    string: 'New York',
-    get_pois: 'true',
-    combine_regions: 'true',
-    get_hotels: 'true',
-    get_airports: 'true',
-    show_all_cities: 'true',
-    get_regions: 'true',
-    get_cities: 'true'
-  },
-  headers: {
-    'X-RapidAPI-Key': 'e9e8848132msh8d3cb44c6e9ed03p1a3216jsnea0051c126a4',
-    'X-RapidAPI-Host': 'priceline-com-provider.p.rapidapi.com'
-  }
-};
+// const options = {
+//   method: 'GET',
+//   url: 'https://priceline-com-provider.p.rapidapi.com/v2/hotels/autoSuggest',
+//   params: {
+//     string: 'New York',
+//     get_pois: 'true',
+//     combine_regions: 'true',
+//     get_hotels: 'true',
+//     get_airports: 'true',
+//     show_all_cities: 'true',
+//     get_regions: 'true',
+//     get_cities: 'true'
+//   },
+// };
 
-export const optionsData = axios.request(options).then(function (response) {
-	console.log(response.data);
-}).catch(function (error) {
-	console.error(error);
-});
+// export const optionsData = axios.request(options).then(function (response) {
+// 	console.log(response.data);
+// }).catch(function (error) {
+// 	console.error(error);
+// });
