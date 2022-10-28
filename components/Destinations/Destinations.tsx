@@ -1,12 +1,24 @@
 import React from 'react'
 import { hotelLocationData as data } from '../../api/hotelLocation'
+import { optionsData } from '../../api/hotelLocation'
 import DestinationCard from './DestinationCard'
 
 
+// const maxDestinationCards = 8;
+// const cities = [];
+
+// const cityList = () => {
+//   for (let i = 0; i < data.length; i++) {
+//   if (data[i].type === 'CITY') {
+//     cities.push(data[i].itemName);
+//   }
+//   }
+// }
+
+// cityList();
+
 const Destinations = () => {
-  console.log(data);
-  const locations = [];
-  const destinations = locations.length
+console.log(optionsData)
 
   return (
     <>
@@ -21,14 +33,9 @@ const Destinations = () => {
       </p>
       </div>
       <div className='mt-10'>
-      {data.map((location, index) => {
-        if (location === 'CITY') {
-          locations.push(data[index])
-          return (
-          <DestinationCard locations={locations} destinations={destinations} key={index} />
-          )
-        }
-      })}
+      {/* {cities.map((city, index) => (
+          <DestinationCard city={city} key={index} />
+          ))} */}
       </div>
       </div>
       </>
@@ -38,11 +45,11 @@ const Destinations = () => {
 
 
 // DESTINATION CARD & FLOW
-// Country -> list of cities -> hotel destinations per city
+// Country (set through state) -> list of cities -> hotel destinations per city
 // Input country then take a list of 8 (max) city names -> input city name into API and get back number of hotels (destinations) or...
-// data.sort for cites then for those cities city.length to get number of objects in array === destinations from same API call
+// data.forEach for cites then for those cities city.hotel.length to get number of objects in array === destinations from same API call
 // Cards link to search bar location fill and show results on search screen (change the state of search)
-
+// or Multiple API calls one for country and one for city --> then use city.hotel.length to get number of destinations
 
 
 export default Destinations
