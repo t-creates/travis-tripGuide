@@ -2,9 +2,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import axios from 'axios';
-import Destinations from '../components/Destinations/Destinations';
 
-import HeroSection from '../components/HeroSection/HeroSection';
+import { Destinations, HeroSection } from '../components'
 
 const Home: NextPage = () => {
   return (
@@ -12,9 +11,7 @@ const Home: NextPage = () => {
       <div className='mb-36'>
         <HeroSection />
       </div>
-      <div>
         <Destinations />
-      </div>
     </div>
   )
 }
