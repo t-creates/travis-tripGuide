@@ -1,7 +1,7 @@
 import React from 'react'
 
-const DestinationCard = ({ locations, destinations }) => {
-  console.log(locations, destinations);
+const DestinationCard = () => {
+
   return (
     <div>DestinationCard</div>
   )

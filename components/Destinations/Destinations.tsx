@@ -1,8 +1,10 @@
 import React from 'react'
+
 import { hotelLocationData as data } from '../../api/hotelLocation'
-import { optionsData } from '../../api/hotelLocation'
 import DestinationCard from './DestinationCard'
 
+
+// Trying to figure out how to get the data from the api to the DestinationCard component
 
 // const maxDestinationCards = 8;
 // const cities = [];
@@ -18,14 +20,11 @@ import DestinationCard from './DestinationCard'
 // cityList();
 
 const Destinations = () => {
-console.log(optionsData)
+console.log(data)
 
   return (
-    <>
     <div className='flex flex-col items-center justify-around'>
-      <div className='pt-30'>
-      <h1 className='homepageHeadline laptop:text-4xl tablet:text-3xl mobile:text-2xl'>Search a best place in the world</h1>
-      </div>
+      <h1 className='homepageHeadline laptop:text-4xl tablet:text-3xl mobile:text-2xl mt-36'>Search a best place in the world</h1>
       <div className='flex items-center justify-center laptop:w-1/2 mobile:w-full'>
       <p className='homepageDesc break-words'> 
         Whether you’re looking for places for a vacation. We are here to Guide you
@@ -38,13 +37,12 @@ console.log(optionsData)
           ))} */}
       </div>
       </div>
-      </>
   )
 }
 
 
 
-// DESTINATION CARD & FLOW
+// DESTINATION CARD & FLOW ?????
 // Country (set through state) -> list of cities -> hotel destinations per city
 // Input country then take a list of 8 (max) city names -> input city name into API and get back number of hotels (destinations) or...
 // data.forEach for cites then for those cities city.hotel.length to get number of objects in array === destinations from same API call
