@@ -7,7 +7,7 @@ import { Destinations, HeroSection } from '../components'
 
 const Home: NextPage = () => {
   return (
-    <div className="pt-11 mx-5">
+    <div className="pt-11 mobile:mx-5 tablet:mx-20">
       <div className='mb-36'>
         <HeroSection />
       </div>
