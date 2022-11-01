@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
 }
 
 a {
@@ -26,6 +27,20 @@ h3{
 h2{
   @apply text-black dark:text-gray-300
 }
+
+/* Fonts */
+.dmSans {
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Colors */
+.c3 {
+  color: #3B3E44;
+  }
+  
+.c4 {
+  color: ##84878B;
+  }
 
 /* Classes */
 
@@ -97,4 +112,10 @@ h2{
   /* or 150% */
   text-align: center;
   color: #84878B;
+}
+
+/* Homepage Cards */
+
+.cardBackground {
+  background: #FFFFFF;
 }

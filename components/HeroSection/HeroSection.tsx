@@ -1,18 +1,15 @@
-import React from 'react'
+import React from 'react';
 
 import BannerHeadline from './BannerHeadline';
 import BannerImage from './BannerImage';
 // Static Data
-import { banners } from '../../data/constants'
+import { banners } from '../../data/constants';
 
-const HeroSection = () => {
+const HeroSection = () => (
+  <div className="flex flex-auto">
+    <BannerHeadline bannerHeadline={banners[1].headline} bannerDesc={banners[1].description} />
+    <BannerImage image={banners[1].image} />
+  </div>
+);
 
-  return (
-    <div className='flex flex-auto'>
-      <BannerHeadline bannerHeadline={banners[1].headline} bannerDesc={banners[1].description} />
-      <BannerImage image={banners[1].image} />
-    </div>
-  )
-}
-
-export default HeroSection
+export default HeroSection;
