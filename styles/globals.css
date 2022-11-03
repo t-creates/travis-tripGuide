@@ -3,6 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 html,
 body {
@@ -33,15 +35,6 @@ h2{
   font-family: 'DM Sans', sans-serif;
 }
 
-/* Colors */
-.c3 {
-  color: #3B3E44;
-  }
-  
-.c4 {
-  color: ##84878B;
-  }
-
 /* Classes */
 
 /* Hero Section */
@@ -70,7 +63,7 @@ h2{
 }
 
 .bannerDesc {
-  font-family: 'DM', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 34px;
@@ -92,7 +85,7 @@ h2{
 
 /* Homepage Headline */
 .homepageHeadline {
-  font-family: 'DM' sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -104,7 +97,7 @@ h2{
 }
 
 .homepageDesc {
-  font-family: 'DM' sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

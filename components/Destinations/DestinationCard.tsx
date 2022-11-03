@@ -8,12 +8,8 @@ const DestinationCard = ({ image, destinations, location }) => (
     <div>
       <Image src={image} alt="destination" width={60} height={60} className="rounded-lg" />
     </div>
-    <div>
-      <p className="text-xl font-bold c3 dmSans pt-3">{location}</p>
-    </div>
-    <div>
-      <h3 className="text-sm c4 dmSans pt-3">{destinations} Destinations</h3>
-    </div>
+    <h3 className="text-xl font-bold text-c3 dmSans pt-3">{location}</h3>
+    <p className="text-sm text-c4 dmSans pt-3">{destinations} Destinations</p>
   </div>
 );
 export default DestinationCard;

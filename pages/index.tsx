@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import axios from 'axios';
 
-import { Destinations, HeroSection } from '../components'
+import { Destinations, HeroSection, FeaturedDestinations } from '../components'
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +12,7 @@ const Home: NextPage = () => {
         <HeroSection />
       </div>
         <Destinations />
+        <FeaturedDestinations />
     </div>
   )
 }
