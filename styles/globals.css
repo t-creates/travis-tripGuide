@@ -91,7 +91,6 @@ h2{
   font-size: 48px;
   line-height: 70px;
   /* identical to box height, or 146% */
-  text-align: center;
   letter-spacing: -0.005em;
   color: #23262F;
 }
@@ -103,7 +102,6 @@ h2{
   font-size: 16px;
   line-height: 24px;
   /* or 150% */
-  text-align: center;
   color: #84878B;
 }
 
