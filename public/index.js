@@ -15,4 +15,5 @@ export { default as paris } from './topTourImages/paris.jpeg';
 export { default as rome } from './topTourImages/rome.jpeg';
 export { default as sydney } from './topTourImages/sydney.jpeg';
 export { default as tokyo } from './topTourImages/tokyo.jpeg';
+export { default as manIcon } from './topTourImages/manIcon.jpeg';
 
