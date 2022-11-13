@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TopTourCard } from '../index';
+import { FeatureDestinationCard } from '../index';
 import { topTourData } from '../../data/topTour';
 
 const TopTour = () => (
@@ -8,7 +8,7 @@ const TopTour = () => (
     <div className="flex justify-between items-center">
       <div className="grid grid-cols-2 gap-5 w-2/3 ">
         {topTourData.slice(0, 3).map((tc) => (
-          <TopTourCard
+          <FeatureDestinationCard
             key={tc.id}
             image={tc.image}
             title={tc.title}
@@ -21,7 +21,7 @@ const TopTour = () => (
       </div>
       <div className="grid grid-cols-1 grid-rows-3 gap-5 w-1/3 ml-5">
         {topTourData.slice(3, 6).map((tc) => (
-          <TopTourCard
+          <FeatureDestinationCard
             key={tc.id}
             image={tc.image}
             title={tc.title}

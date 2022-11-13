@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { FeaturedDestinationCard } from '../index';
+import { DestinationCard } from '../index';
 import { destinationCardsData as data } from '../../data/destinationCards';
 
-const FeaturedDestination = () => (
+const Destinations = () => (
   <div>
     <div className="mt-10 laptop:grid grid-cols-4 gap-5 container mobile:flex mobile:flex-row mobile:overflow-x-auto">
       {data.map((dc) => (
-        <FeaturedDestinationCard
+        <DestinationCard
           image={dc.image}
           location={dc.location}
           destinations={dc.destinations}
@@ -24,4 +24,4 @@ const FeaturedDestination = () => (
   </div>
 );
 
-export default FeaturedDestination;
+export default Destinations;

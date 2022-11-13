@@ -13,7 +13,7 @@ interface iTopTour {
   id: number;
 }
 
-const TopTourCard = ({ image, title, rating, activities, id, type }: iTopTour) => {
+const FeatureDestinationCard = ({ image, title, rating, activities, id, type }: iTopTour) => {
   const cName = type === "rectangle" ? "col-start-1 col-span-2" : "w-full h-full";
   const imageHeight = () => {
     if (type === "rectangle") {
@@ -74,4 +74,4 @@ const TopTourCard = ({ image, title, rating, activities, id, type }: iTopTour) =
   );
 };
 
-export default TopTourCard;
+export default FeatureDestinationCard;
