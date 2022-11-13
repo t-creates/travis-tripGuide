@@ -1,7 +1,6 @@
 import React from 'react';
 
-import BannerHeadline from './BannerHeadline';
-import BannerImage from './BannerImage';
+import { BannerImage, BannerHeadline } from '../index';
 // Static Data
 import { banners } from '../../data/constants';
 
