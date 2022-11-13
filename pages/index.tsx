@@ -11,9 +11,9 @@ const Home: NextPage = () => {
       <div className='mb-36'>
         <HeroSection />
       </div>
-        <SearchBar />
-        <FeaturedDestination />
-        <TopTour />
+      <SearchBar />
+      <FeaturedDestination />
+      <TopTour />
     </div>
   )
 }
