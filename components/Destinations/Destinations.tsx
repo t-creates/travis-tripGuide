@@ -1,10 +1,12 @@
 import React from 'react';
 
-import { DestinationCard } from '../index';
+import DestinationCard from './DestinationCard';
 import { destinationCardsData as data } from '../../data/destinationCards';
 
+// Cards still need to be linked to autofill search and render location results on search page && Dark theme
+
 const Destinations = () => (
-  <div>
+  <div className=''>
     <div className="mt-10 laptop:grid grid-cols-4 gap-5 container mobile:flex mobile:flex-row mobile:overflow-x-auto">
       {data.map((dc) => (
         <DestinationCard
@@ -15,12 +17,6 @@ const Destinations = () => (
         />
       ))}
     </div>
-    <h1
-      className="homepageHeadline laptop:text-4xl tablet:text-3xl mobile:text-2xl mobile:mt-10 laptop:mt-36 break-words"
-    >
-      Featured Destinations
-    </h1>
-    <p className="homepageDesc break-words mt-3">Popular destinations open to visitors from Indonesia</p>
   </div>
 );
 

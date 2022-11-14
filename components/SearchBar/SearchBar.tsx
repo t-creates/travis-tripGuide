@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Destinations = () => (
+const SearchBar = () => (
   <div className="flex flex-col items-center justify-around ">
     <h1 className="homepageHeadline laptop:text-4xl tablet:text-3xl mobile:text-2xl mt-36 p-1">
       Search a best place in the world
@@ -14,4 +14,4 @@ const Destinations = () => (
   </div>
 );
 
-export default Destinations;
+export default SearchBar;

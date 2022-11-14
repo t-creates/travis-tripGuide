@@ -7,7 +7,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
-  darkMode: 'media',
+  darkMode: 'class',
   theme: {
     screens: {
       mobile: '300px',
@@ -40,9 +40,10 @@ module.exports = {
       c3: '#3B3E44',
       c4: '#84878B',
       c9: '#FFFFFF',
-
     },
     extend: {},
   },
-  plugins: [],
-};
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
+}

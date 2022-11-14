@@ -9,11 +9,11 @@ export { default as malang } from './destinationCardImages/malang.jpeg';
 export { default as nusaDua } from './destinationCardImages/nusa-dua.jpeg';
 export { default as surabaya } from './destinationCardImages/surabaya.jpeg';
 export { default as watatobi } from './destinationCardImages/watatobi.jpeg';
-export { default as barcelona } from './topTourImages/barcelona.jpeg';
-export { default as london } from './topTourImages/london.jpeg';
-export { default as paris } from './topTourImages/paris.jpeg';
-export { default as rome } from './topTourImages/rome.jpeg';
-export { default as sydney } from './topTourImages/sydney.jpeg';
-export { default as tokyo } from './topTourImages/tokyo.jpeg';
-export { default as manIcon } from './topTourImages/manIcon.jpeg';
+export { default as barcelona } from './featuredDestinationImages/barcelona.jpeg';
+export { default as london } from './featuredDestinationImages/london.jpeg';
+export { default as paris } from './featuredDestinationImages/paris.jpeg';
+export { default as rome } from './featuredDestinationImages/rome.jpeg';
+export { default as sydney } from './featuredDestinationImages/sydney.jpeg';
+export { default as tokyo } from './featuredDestinationImages/tokyo.jpeg';
+export { default as manIcon } from './featuredDestinationImages/manIcon.jpeg';
 

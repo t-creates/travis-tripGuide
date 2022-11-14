@@ -1,0 +1,10 @@
+export { default as ErrorIcon } from "./Error";
+export { default as AccountIcon } from "./account";
+export { default as SignOutIcon } from "./signOut";
+export { default as BookingIcon } from "./bookings";
+export { default as MyWalletIcon } from "./myWallet";
+export { default as MyProfileIcon } from "./myProfile";
+export { default as MyRewardsIcon } from "./myRewards";
+export { default as MyAccountIcon } from "./myAccount";
+export { default as GoogleLogoIcon } from "./googleLogo";
+export { default as NotificationsBellIcon } from "./notificationsBell";
