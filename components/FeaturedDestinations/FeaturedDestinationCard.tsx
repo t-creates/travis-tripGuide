@@ -14,7 +14,7 @@ interface iTopTour {
 }
 
 const FeatureDestinationCard = ({ image, title, rating, activities, id, type }: iTopTour) => {
-  const cName = type === "rectangle" ? "col-start-1 col-span-2" : "w-full h-full";
+  const cName = type === "rectangle" ? "col-start-1 laptop:col-span-2" : "w-full h-full";
   const imageHeight = () => {
     if (type === "rectangle") {
       return 'h-[12rem]';

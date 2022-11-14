@@ -1,6 +1,6 @@
 import { barcelona, paris, london, rome, tokyo, sydney } from '../public/index';
 
-export const topTourData = [
+export const featuredDestinationData = [
   {
     id: 0,
     title: 'Barcelona Tours',
