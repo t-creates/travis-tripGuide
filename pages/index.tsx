@@ -5,22 +5,26 @@ import axios from 'axios';
 
 import { HeroSection, FeaturedDestinations, SearchBar, Destinations, TopTour } from '../components'
 
-import CarHomePage from '@/components/CarHomePage';
-import NewsLetter from '@/components/home/newsletter';
+import CarHomePage from '../components/CarHomePage';
+import NewsLetter from '../components/home/newsletter';
 import { ToggleThemeButton } from '../components';
+import FooterNav from '../components/FooterComponent';
 
 const Home: NextPage = () => {
   return (
-    <div className="pt-11 mobile:mx-5 tablet:mx-20 desktop:mx-72">
-      <div className='mb-36'>
-        <HeroSection />
+    <>
+      <div className='pt-11 mobile:mx-5 tablet:mx-20 desktop:mx-72'>
+        <div className='mb-36'>
+          <HeroSection />
+        </div>
+        <SearchBar />
+        <Destinations />
+        <FeaturedDestinations />
+        <TopTour />
       </div>
-      <SearchBar />
-      <Destinations />
-      <FeaturedDestinations />
-      <TopTour />
-    </div>
-  )
-}
+      {/* <FooterNav /> */}
+    </>
+  );
+};
 
 export default Home;
