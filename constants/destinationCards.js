@@ -1,4 +1,4 @@
-import { bandung, batu, doemg, kuta, malang, nusaDua, surabaya, watatobi } from '../public';
+import { bandung, batu, doemg, kuta, malang, nusaDua, surabaya, watatobi } from '@/public';
 
 export const destinationCardsData = [
   {

@@ -1,4 +1,4 @@
-import { barcelona, paris, london, rome, tokyo, sydney } from '../public/index';
+import { barcelona, paris, london, rome, tokyo, sydney } from '@/public/index';
 
 export const featuredDestinationData = [
   {
@@ -9,7 +9,6 @@ export const featuredDestinationData = [
     activities: 199,
     image: barcelona,
     locationID: 3000035833,
-    type: 'rectangle',
   },
   {
     id: 1,
@@ -19,7 +18,6 @@ export const featuredDestinationData = [
     activities: 209,
     image: paris,
     locationID: 3000035827.0,
-    type: 'vertical',
   },
   {
     id: 2,
@@ -29,7 +27,6 @@ export const featuredDestinationData = [
     activities: 196,
     image: london,
     locationID: 3000035825,
-    type: 'vertical',
   },
   {
     id: 3,
@@ -39,7 +36,6 @@ export const featuredDestinationData = [
     activities: 251,
     image: rome,
     locationID: 3000035823,
-    type: 'square',
   },
   {
     id: 4,
@@ -49,7 +45,6 @@ export const featuredDestinationData = [
     activities: 176,
     image: tokyo,
     locationID: 3000040035,
-    type: 'square',
   },
   {
     id: 5,
@@ -59,6 +54,5 @@ export const featuredDestinationData = [
     activities: 155,
     image: sydney,
     locationID: 3000040000,
-    type: 'square',
   },
 ];

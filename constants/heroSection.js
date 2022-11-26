@@ -1,4 +1,4 @@
-import { flightBanner, carBanner, palmBeach } from '../public/index'
+import { flightBanner, carBanner, palmBeach } from '@/public/index'
 
 // Temporary data till we decide on pages or dynamic front-end
 export const banners = [

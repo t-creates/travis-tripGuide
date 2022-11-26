@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { FeaturedDestinationCard } from '../index';
-import { featuredDestinationData } from '../../data/featuredDestination';
+import { FeaturedDestinationCard } from '@/components';
+import { featuredDestinationData } from '@/constants/featuredDestination'
 
 const FeaturedDestinations = () => (
   <>
@@ -14,28 +14,21 @@ const FeaturedDestinations = () => (
     <div className="laptop:mt-12 mobile:mt-7">
       <div className="flex justify-between items-center laptop:flex-row mobile:flex-col max-w-7xl">
         <div className="grid laptop:grid-cols-2 gap-5 laptop:w-2/3 mobile:w-full mobile:grid-cols-1 mt-5">
-          {featuredDestinationData.slice(0, 3).map((tc) => (
+          <FeaturedDestinationCard {...featuredDestinationData[0]} containerStyles="rectangle" />
+          {featuredDestinationData.slice(1, 3).map((featDestCard) => (
             <FeaturedDestinationCard
-              key={tc.id}
-              image={tc.image}
-              title={tc.title}
-              rating={tc.rating}
-              activities={tc.activities}
-              id={tc.id}
-              type={tc.type}
+              key={featDestCard.id}
+              {...featDestCard}
+              containerStyles="vertical"
             />
           ))}
         </div>
         <div className="grid grid-cols-1 grid-rows-3 gap-5 laptop:w-1/3 mobile:w-full laptop:ml-5 mobile:mt-5">
-          {featuredDestinationData.slice(3, 6).map((tc) => (
+          {featuredDestinationData.slice(3, 6).map((featDestCard) => (
             <FeaturedDestinationCard
-              key={tc.id}
-              image={tc.image}
-              title={tc.title}
-              rating={tc.rating}
-              activities={tc.activities}
-              id={tc.id}
-              type={tc.type}
+              key={featDestCard.id}
+              {...featDestCard}
+              containerStyles="square"
             />
           ))}
         </div>
