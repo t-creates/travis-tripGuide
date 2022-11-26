@@ -19,7 +19,7 @@ module.exports = {
       laptop: '1024px',
       // => @media (min-width: 1024px) { ... }
 
-      desktop: '1280px',
+      desktop: '1480px',
       // => @media (min-width: 1280px) { ... }
     },
     colors: {
@@ -40,6 +40,7 @@ module.exports = {
       c3: '#3B3E44',
       c4: '#84878B',
       c9: '#FFFFFF',
+      shadow: '#141416', 
     },
     extend: {},
   },

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { BannerImage, BannerHeadline } from '../index';
+import { BannerImage, BannerHeadline } from '@/components';
 // Static Data
-import { banners } from '../../data/heroSection';
+import { banners } from '@/constants/heroSection';
 
 const HeroSection = () => (
   <div className="flex flex-auto">

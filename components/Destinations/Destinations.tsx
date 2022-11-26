@@ -1,7 +1,7 @@
 import React from 'react';
 
-import DestinationCard from './DestinationCard';
-import { destinationCardsData as data } from '../../data/destinationCards';
+import { DestinationCard } from '@/components';
+import { destinationCardsData as data } from '@/constants/destinationCards';
 
 // Cards still need to be linked to autofill search and render location results on search page && Dark theme
 

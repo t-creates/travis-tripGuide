@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 
-import { manIcon } from '../../public/index';
+import { manIcon } from '@/public';
 
 
 interface iFeaturedDestinations {
-  type: string;
+  containerStyles: string;
   image: any;
   title: string;
   rating: number;
@@ -13,16 +13,16 @@ interface iFeaturedDestinations {
   id: number;
 }
 
-const FeatureDestinationCard = ({ image, title, rating, activities, id, type }: iFeaturedDestinations) => {
-  const cName = type === "rectangle" ? "col-start-1 laptop:col-span-2" : "w-full h-full";
+const FeatureDestinationCard = ({ image, title, rating, activities, containerStyles }: iFeaturedDestinations) => {
+  const cName = containerStyles === "rectangle" ? "col-start-1 laptop:col-span-2" : "w-full h-full";
   const imageHeight = () => {
-    if (type === "rectangle") {
+    if (containerStyles === "rectangle") {
       return 'h-[12rem]';
     }
-    else if (type === 'vertical') {
+    else if (containerStyles === 'vertical') {
       return 'h-[16.3rem]';
     }
-    else if (type === 'square') {
+    else if (containerStyles === 'square') {
       return 'h-[9rem]';
     }
   }
@@ -35,7 +35,7 @@ const FeatureDestinationCard = ({ image, title, rating, activities, id, type }: 
         className='rounded-2xl '
         layout='fill'
       />
-      {type === 'square' ? (
+      {containerStyles === 'square' ? (
         <>
           <p className='absolute text-orange-600 w-7 text-center ml-4 mt-4 bg-c9 rounded-3xl text-xs'>{rating}</p>
           <h3 className='absolute text-c9 tracking-wider font-semibold bottom-6 left-5 text-lg dmSans'>{title}</h3>
