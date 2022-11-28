@@ -1,4 +1,4 @@
-import { Japan, Spain, Italy, France } from '@/public/index'
+import { Japan, Spain, Italy, France, Germany, Sweden } from '@/public/index'
 
 export const topTourData = [
   {
@@ -38,7 +38,7 @@ export const topTourData = [
     title: 'Germany',
     location: 'Berlin',
     popularPlaces: 14,
-    image: '',
+    image: Germany,
     locationID: 0,
   },
   {
@@ -46,7 +46,7 @@ export const topTourData = [
     title: 'Sweden',
     location: 'Stockholm',
     popularPlaces: 12,
-    image: '',
+    image: Sweden,
     locationID: 0,
   },
 ];

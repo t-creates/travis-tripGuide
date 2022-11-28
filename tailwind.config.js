@@ -39,12 +39,15 @@ module.exports = {
       orange: colors.orange,
       c3: '#3B3E44',
       c4: '#84878B',
+      c6: '#E7ECF3',
       c9: '#FFFFFF',
+      bg: '#FAFAFA',
       shadow: '#141416', 
     },
     extend: {},
   },
   plugins: [
     require('@tailwindcss/forms'),
+    require('tailwind-scrollbar-hide'),
   ],
 }
