@@ -7,7 +7,7 @@ import { destinationCardsData as data } from '@/constants/destinationCards';
 
 const Destinations = () => (
   <div className=''>
-    <div className="mt-10 laptop:grid grid-cols-4 gap-5 container mobile:flex mobile:flex-row mobile:overflow-x-auto">
+    <div className="mt-10 laptop:grid grid-cols-4 gap-5 container mobile:flex mobile:flex-row mobile:overflow-x-auto scrollbar-hide">
       {data.map((dc) => (
         <DestinationCard
           image={dc.image}

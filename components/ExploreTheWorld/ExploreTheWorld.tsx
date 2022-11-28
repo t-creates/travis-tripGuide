@@ -1,9 +1,9 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react'
 
-import { TopTourCard } from '@/components';
-import { topTourData } from '@/constants/topTour';
+import { ExploreTheWorldCard } from '@/components'
+import { exploreTheWorldData } from '@/constants/exploreTheWorld'
 
-const TopTour = () => {
+const ExploreTheWorld = () => {
   const maxScrollWidth = useRef(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const carousel = useRef(null);
@@ -54,8 +54,8 @@ const TopTour = () => {
     <div className='mt-36'>
       <div className='flex flex-row justify-between'>
         <div>
-          <h1 className="homepageHeadline laptop:text-4xl tablet:text-3xl mobile:text-2xl p-1">Top Tour</h1>
-          <p className="homepageDesc break-words mt-3 mb-12">Keep Calm & Travel On</p>
+          <h1 className="homepageHeadline laptop:text-4xl tablet:text-3xl mobile:text-2xl p-1">Explore The World</h1>
+          <p className="homepageDesc break-words mt-3 mb-12">10,788 beautiful places to go</p>
         </div>
         <div className='flex items-center mobile:hidden tablet:flex'>
           <button onClick={movePrev} disabled={isDisabled('prev')}
@@ -76,24 +76,28 @@ const TopTour = () => {
       </div>
       <div ref={carousel}
         className="carousel-container relative overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x scrollbar-hide
-        flex justify-between items-center laptop:flex-row mobile:flex-col max-w-7xl laptop:overflow-x-auto gap-5"
+        flex justify-between items-center laptop:flex-row mobile:flex-col max-w-7xl laptop:overflow-x-auto gap-3"
       >
-        {topTourData.map((tourCard) => (
+        {exploreTheWorldData.map((exploreCard) => (
           <div
-            key={tourCard.id}
-            className="tablet:min-w-[370px] h-[495px] mobile:min-w-[250px] mobile:h-[375px] relative snap-start carousel-item"
-          >
-            <TopTourCard
-              image={tourCard.image}
-              title={tourCard.title}
-              popularPlaces={tourCard.popularPlaces}
-              locationID={tourCard.locationID}
-              location={tourCard.location}
+            key={exploreCard.id}
+            className="tablet:min-w-[270px] h-[362px] mobile:min-w-[250px] mobile:h-[375px]
+           relative snap-start carousel-item rounded-2xl bg-c4 p-3 flex flex-col">
+            <ExploreTheWorldCard
+              image={exploreCard.image}
+              title={exploreCard.title}
+              location={exploreCard.location}
+              rooms={exploreCard.rooms}
+              costPerNight={exploreCard.costPerNight}
+              fiveStarRating={exploreCard.fiveStarRating}
+              totalReviews={exploreCard.totalReviews}
+              distanceToTownCenter={exploreCard.distanceToTownCenter}
             />
           </div>
         ))}
       </div>
     </div>
-  );
+  )
 }
-export default TopTour;
+
+export default ExploreTheWorld

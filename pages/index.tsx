@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import axios from 'axios';
 
-import { HeroSection, FeaturedDestinations, SearchBar, Destinations, TopTour } from '@/components'
+import { HeroSection, FeaturedDestinations, SearchBar, Destinations, TopTour, ExploreTheWorld } from '@/components'
 
 import CarHomePage from '../components/CarHomePage';
 import NewsLetter from '../components/home/newsletter';
@@ -21,6 +21,7 @@ const Home: NextPage = () => {
         <Destinations />
         <FeaturedDestinations />
         <TopTour />
+        <ExploreTheWorld />
       </div>
       {/* <FooterNav /> */}
     </>

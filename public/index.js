@@ -20,4 +20,17 @@ export { default as Japan } from '@/public/topTourImages/Japan.jpeg';
 export { default as Spain } from '@/public/topTourImages/Spain.webp';
 export { default as Italy } from '@/public/topTourImages/Italy.jpeg';
 export { default as France } from '@/public/topTourImages/France.jpeg';
+export { default as Germany } from '@/public/topTourImages/Germany.webp';
+export { default as Sweden } from '@/public/topTourImages/Sweden.webp';
+export { default as mamaris } from '@/public/exploreTheWorldImages/mamaris.webp';
+export { default as santiago } from '@/public/exploreTheWorldImages/santiago.webp';
+export { default as buenosAires } from '@/public/exploreTheWorldImages/buenosAires.jpeg';
+export { default as bruge } from '@/public/exploreTheWorldImages/bruge.jpeg';
+export { default as andermatt } from '@/public/exploreTheWorldImages/andermatt.webp';
+export { default as stPetersburg } from '@/public/exploreTheWorldImages/stPetersburg.webp';
+export { default as mykonos } from '@/public/exploreTheWorldImages/mykonos.webp';
+export { default as albufeira } from '@/public/exploreTheWorldImages/albufeira.webp';
+export { default as jasper } from '@/public/exploreTheWorldImages/jasper.webp';
+export { default as orlando } from '@/public/exploreTheWorldImages/orlando.jpeg';
+
 

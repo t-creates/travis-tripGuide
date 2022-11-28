@@ -10,3 +10,5 @@ export { default as FeaturedDestinations } from './FeaturedDestinations/Featured
 export { default as FeaturedDestinationCard } from './FeaturedDestinations/FeaturedDestinationCard';
 export { default as TopTour } from './TopTour/TopTour';
 export { default as TopTourCard } from './TopTour/TopTourCard';
+export { default as ExploreTheWorld } from './ExploreTheWorld/ExploreTheWorld';
+export { default as ExploreTheWorldCard } from './ExploreTheWorld/ExploreTheWorldCard';
