@@ -11,7 +11,7 @@ const FeaturedDestinations = () => (
       Featured Destinations
     </h1>
     <p className="homepageDesc break-words mt-3">Popular destinations open to visitors from Indonesia</p>
-    <div className="laptop:mt-12 mobile:mt-7">
+    <div className="laptop:pt-10 mobile:pt-7">
       <div className="flex justify-between items-center laptop:flex-row mobile:flex-col max-w-7xl">
         <div className="grid laptop:grid-cols-2 gap-5 laptop:w-2/3 mobile:w-full mobile:grid-cols-1 mt-5">
           <FeaturedDestinationCard {...featuredDestinationData[0]} containerStyles="rectangle" />

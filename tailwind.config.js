@@ -42,6 +42,7 @@ module.exports = {
       c6: '#E7ECF3',
       c9: '#FFFFFF',
       bg: '#FAFAFA',
+      bg1: '#F5F5F5',
       shadow: '#141416', 
     },
     extend: {},

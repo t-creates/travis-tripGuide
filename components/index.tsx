@@ -12,3 +12,5 @@ export { default as TopTour } from './TopTour/TopTour';
 export { default as TopTourCard } from './TopTour/TopTourCard';
 export { default as ExploreTheWorld } from './ExploreTheWorld/ExploreTheWorld';
 export { default as ExploreTheWorldCard } from './ExploreTheWorld/ExploreTheWorldCard';
+export { default as TrendingCities } from './TrendingCities/TrendingCities';
+export { default as TrendingCitiesCard } from './TrendingCities/TrendingCitiesCard';
