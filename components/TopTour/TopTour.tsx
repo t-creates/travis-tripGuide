@@ -76,7 +76,7 @@ const TopTour = () => {
       </div>
       <div ref={carousel}
         className="carousel-container relative overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x scrollbar-hide
-        flex justify-between items-center laptop:flex-row mobile:flex-col max-w-7xl laptop:overflow-x-auto gap-5"
+        flex justify-between items-center laptop:flex-row mobile:flex-col laptop:overflow-x-auto gap-5"
       >
         {topTourData.map((tourCard) => (
           <div

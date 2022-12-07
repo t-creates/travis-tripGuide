@@ -18,7 +18,7 @@ const TrendingCitiesCard = ({ image, location, fiveStarRating, totalReviews, cos
       <div className='p-[14px]'>
         <Image src={image} alt='Trending City' width={177} height={183} className='rounded-2xl' />
       </div>
-      <div className='flex flex-col pl-2 gap-6'>
+      <div className='flex flex-col pl-2 tablet:gap-6 gap-2 '>
         <h3 className='dmSans font-bold text-base text-c3 pt-4'>{location}</h3>
         <div className='flex flex-row items-center'>
           {/* Star SVG */}
@@ -31,7 +31,7 @@ const TrendingCitiesCard = ({ image, location, fiveStarRating, totalReviews, cos
           </p>
         </div>
         <div className='flex flex-row items-center'>
-          <p className='dmSans font-semibold text-[25px] leading-[18px] text-c3'>
+          <p className='dmSans font-semibold tablet:text-[25px] tablet:leading-[18px] text-sm text-c3'>
             ${costPerNight}
             <span className='dmSans font-medium text-[15px] leading-[9px] text-c4'>/night</span>
           </p>

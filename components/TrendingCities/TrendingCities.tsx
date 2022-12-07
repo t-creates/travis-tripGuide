@@ -10,11 +10,11 @@ const TrendingCities = () => {
         <h1 className="homepageHeadline laptop:text-4xl tablet:text-3xl mobile:text-2xl p-1">Trending Cities</h1>
         <p className="homepageDesc break-words mt-3">The most searched for cities on TripGuide</p>
       </div>
-      <div className='grid grid-cols-2 justify-around gap-10 py-10 '>
+      <div className='grid laptop:grid-cols-2 justify-around gap-10 py-10 grid-cols-1 '>
         {exploreTheWorldData.slice(0, 6).map((data) => (
           <div
             key={data.id}
-            className="w-[470px] h-[215px] rounded-2xl shrink bg-c9 hover:shadow-2xl hover:cursor-pointer"
+            className="tablet:w-[470px] tablet:h-[215px] rounded-2xl bg-c9 hover:shadow-2xl hover:cursor-pointer"
           >
             <TrendingCitiesCard {...data} />
           </div>

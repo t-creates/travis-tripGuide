@@ -57,7 +57,7 @@ const ExploreTheWorld = () => {
           <h1 className="homepageHeadline laptop:text-4xl tablet:text-3xl mobile:text-2xl p-1">Explore The World</h1>
           <p className="homepageDesc break-words mt-3">10,788 beautiful places to go</p>
         </div>
-        <div className='flex items-center mobile:hidden tablet:flex'>
+        <div className='items-center mobile:hidden tablet:flex'>
           <button onClick={movePrev} disabled={isDisabled('prev')}
             className='disabled:cursor-not-allowed hover:bg-c6 rounded-full' >
             {/* Left Arrow */}
@@ -76,12 +76,12 @@ const ExploreTheWorld = () => {
       </div>
       <div ref={carousel}
         className="carousel-container relative overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x scrollbar-hide
-        flex justify-between items-center laptop:flex-row mobile:flex-col max-w-7xl laptop:overflow-x-auto py-10 gap-[30px]"
+        flex justify-between items-center flex-row overflow-x-auto py-10 gap-[30px]"
       >
         {exploreTheWorldData.map((exploreCard) => (
           <div
             key={exploreCard.id}
-            className="tablet:min-w-[270px] h-[362px] mobile:min-w-[250px] mobile:h-[375px]
+            className="tablet:min-w-[270px] h-[362px] mobile:min-w-[200px] mobile:h-[375px]
             relative snap-start carousel-item rounded-2xl bg-c9 p-3 flex flex-col hover:shadow-2xl hover:cursor-pointer">
             <ExploreTheWorldCard {...exploreCard} />
           </div>

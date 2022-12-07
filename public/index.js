@@ -32,5 +32,9 @@ export { default as mykonos } from '@/public/exploreTheWorldImages/mykonos.webp'
 export { default as albufeira } from '@/public/exploreTheWorldImages/albufeira.webp';
 export { default as jasper } from '@/public/exploreTheWorldImages/jasper.webp';
 export { default as orlando } from '@/public/exploreTheWorldImages/orlando.jpeg';
+export { default as beachHobby } from '@/public/travelYourPassionImages/beachHobby.jpeg';
+export { default as sportingTrips } from '@/public/travelYourPassionImages/sportingTrip.jpeg';
+export { default as cityTours } from '@/public/travelYourPassionImages/cityTrip.jpeg';
+export { default as hikingTrips } from '@/public/travelYourPassionImages/hikingTrip.jpeg';
 
 

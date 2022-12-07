@@ -41,6 +41,10 @@ h2{
 
 /* Classes */
 
+.cardBackground {
+  background: linear-gradient(175.54deg, rgba(2, 0, 14, 0.13) 9.38%, rgba(42, 34, 101, 0) 47.26%, rgba(15, 11, 44, 0.6) 92.77%);  
+}
+
 /* Hero Section */
 .bannerHeadlineMobile {  
   font-family: 'Poppins', sans-serif;
