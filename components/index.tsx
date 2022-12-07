@@ -14,3 +14,5 @@ export { default as ExploreTheWorld } from './ExploreTheWorld/ExploreTheWorld';
 export { default as ExploreTheWorldCard } from './ExploreTheWorld/ExploreTheWorldCard';
 export { default as TrendingCities } from './TrendingCities/TrendingCities';
 export { default as TrendingCitiesCard } from './TrendingCities/TrendingCitiesCard';
+export { default as TravelYourPassion } from './TravelYourPassion/TravelYouPassion';
+export { default as TravelYourPassionCard } from './TravelYourPassion/TravelYourPassionCard';

@@ -3,11 +3,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import axios from 'axios';
 
-import { HeroSection, FeaturedDestinations, SearchBar, Destinations, TopTour, ExploreTheWorld, TrendingCities } from '@/components'
-
-import CarHomePage from '../components/CarHomePage';
-import NewsLetter from '../components/home/newsletter';
-import { ToggleThemeButton } from '../components';
+import { HeroSection, FeaturedDestinations, SearchBar, Destinations, TopTour, ExploreTheWorld, TrendingCities, TravelYourPassion } from '@/components'
+import { CarHomePage, NewsLetter, ToggleThemeButton } from "../components"
 import FooterNav from '../components/FooterComponent';
 
 const Home: NextPage = () => {
@@ -26,7 +23,10 @@ const Home: NextPage = () => {
       <div className='mobile:px-5 tablet:px-20 laptop:px-36 desktop:px-48 pb-36 bg-bg1'>
         <TrendingCities />
       </div>
-      {/* <FooterNav /> */}
+      <div className='mobile:px-5 tablet:px-20 laptop:px-36 desktop:px-48 pb-36 bg-bg'>
+        <TravelYourPassion />
+      </div>
+      <FooterNav />
     </>
   );
 };
