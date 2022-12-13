@@ -1,19 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
-
 html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
-}
 
 a {
   color: inherit;
@@ -30,9 +21,32 @@ h2{
   @apply text-black dark:text-gray-300
 }
 
-/* Fonts */
+/* ID */
+
+.filterSearchBar {
+ background-image: url('/icons/MagnifyingGlass.png');
+ background-position: right center;
+ background-size: cover;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 9999;
+  cursor: pointer;
+  filter: greyscale(1);
+}
+
+.filterSearchBar:hover {
+filter: greyscale(0);
+}; 
+
+
+
+/* Fonts */ 
+@layer components{
 .dmSans {
   font-family: 'DM Sans', sans-serif;
+}
 }
 
 .poppins {
@@ -44,6 +58,18 @@ h2{
 .cardBackground {
   background: linear-gradient(175.54deg, rgba(2, 0, 14, 0.13) 9.38%, rgba(42, 34, 101, 0) 47.26%, rgba(15, 11, 44, 0.6) 92.77%);  
 }
+
+/*
+input[type=range]:: -webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+*/
 
 /* Hero Section */
 .bannerHeadlineMobile {  
