@@ -14,7 +14,7 @@ interface iHotelListingCards {
   checkInDate: string
   checkOutDate: string
   propertyType: string
-  facilities: Array
+  facilities: Array<any>
   specialOffer: boolean
   website: string
   safetyMeasures: boolean

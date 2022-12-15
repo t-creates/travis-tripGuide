@@ -40,6 +40,7 @@ module.exports = {
       c1: '#141416',
       c3: '#3B3E44',
       c4: '#84878B',
+      c5: '#B1B5C3',
       c6: '#E7ECF3',
       c9: '#FFFFFF',
       bg: '#FAFAFA',

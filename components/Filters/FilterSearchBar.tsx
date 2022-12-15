@@ -16,6 +16,7 @@ const FilterSearchBar = ({ children }: iFilterSearchBar) => {
       // dispatch(searchHotelListing(query));
     }
   };
+
   return (
     <div className='flex flex-col'>
       <h4 className='dmSans font-medium text-[18px] leading-[23px] text-[#333333]'>
@@ -26,7 +27,7 @@ const FilterSearchBar = ({ children }: iFilterSearchBar) => {
         <label htmlFor='search'>
           <input
             type='text'
-            onKeyPress={handleKeyPress}
+            onKeyDown={handleKeyPress}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             id="filterSearchBar"
