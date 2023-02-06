@@ -51,13 +51,13 @@ To set up a development environment, please follow these steps:
 1. Clone the repo
 
    ```shell
-    git clone https://github.com/JavaScript-Mastery-PRO/Cohort1_CapstoneProject_Team1.git
+    git clone https://github.com/t-creates/travis-tripGuide.git
    ```
 
 2. Change directory to the project directory
 
     ```shell
-    cd Cohort1_CapstoneProject_Team1
+    cd travis-tripGuide
     ```
 
 You have successfully cloned the repo. Go ahead and start developing the project with your chosen framework (React.js or Next.js)! 
